@@ -13,6 +13,7 @@
   --sbg: #e4e6e6; /* Cards color */
   --fg: #3a3a3a; /* Foreground color */
   --sfg: #3a3a3a; /* Sceondary Foreground color */
+  --blu: #02131b;
 
   /* Image background  */
 
@@ -44,8 +45,7 @@
 
 
 *{
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
     font-family:  Tomorrow, sans-serif;
     transition: 0.2s ease-in-out;
@@ -54,12 +54,11 @@
 
   
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--bg);
+    background-color: var(--blu);
     background-image: var(--imgcol), var(--imgbg);
-   
-    
+}
+nav{
+  background-color: #3c372a;
 }
 
 nav .brand-logo {
@@ -75,7 +74,7 @@ nav .brand-logo {
 .pwn_box{
   border: 1px solid #e40881;
   text-align: left;
-  padding: 20px 10px 20px 10px !important;
+  padding: 0px 10px 0px 10px !important;
   color: #ffff;
   border-radius: 5px;
   margin-top: 10px;
@@ -100,6 +99,9 @@ nav .brand-logo {
   color: red;
 }
 
+
+
+
 .rev_box{
   border: 1px solid red;
   text-align: left;
@@ -108,4 +110,24 @@ nav .brand-logo {
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.card .card-image .card-title {
+  color: #02131b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 24px;
+}
+
+
+
+
+.card .card-action {
+  background-color: #02131bed;
+  border-top: 1px solid rgba(160,160,160,0.2);
+  position: relative;
+  padding: 16px 24px;
+  text-align: center;
 }
