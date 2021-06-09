@@ -10,7 +10,7 @@
       <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>WebPage Name</title>
+      <title>Night Game</title>
     </head>
 
     <body class="darktheme">
@@ -18,7 +18,7 @@
         <div class="nav-wrapper">
           <a href="#" class="brand-logo center">NIGHTHAWK</a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="#">Scoreboard</a></li>
+            <li><a href="pages/scoreboard.html">Scoreboard</a></li>
             <li><a href="#">Challenges</a></li>
             <li><a href="#">Profile</a></li>
           </ul>
@@ -193,7 +193,7 @@
                     <img class="responsive-img" src="img/web_1.jpg">
                   </div>
                   <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">This is a link</a>
                   </div>
                 </div>
               </div>
@@ -209,7 +209,15 @@
       <br><br>
 
       
-
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
 
     
 
@@ -221,7 +229,15 @@
 
 
       <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/jquery-3.6.0.min.js" ></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+
+          
+      </script>
     </body>
   </html>
         
